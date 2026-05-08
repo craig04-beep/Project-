@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- @author Steven Craig, Craig Resume, Portfolio Page
+Southern Illinois University  Developed: Tested: 2-21-26,  Tested: 2-21-26
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <link rel="icon" type="image/png" href="images/Falcon.png">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="/style/main.css">
+  <link rel="stylesheet" href="style/slicknav.css">
+
+  <!-- jQuery + SlickNav -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.slicknav.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="/images/play.png"
+             id="mainGraphic"
+             alt="Main Graphic"
+             class="rounded">
+    </header>
+            
+    <audio controls autoplay loop hidden>
+        <source src="/audio/Data.mp3" type="audio/mpeg">
+    </audio>        
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+    <script>
+                    
+        const mainGraphic = document.getElementById("mainGraphic");
+    
+        mainGraphic.addEventListener("mouseover", function() {
+            mainGraphic.src = "/images/player.png";
+    });
+    
+    mainGraphic.addEventListener("mouseout", function() {
+    mainGraphic.src = "/images/play.png";
+    });
+    </script>
+
+
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="main menu.htm" class="current">Home</a></li>
+                <li><a href="3d platformers.htm">3d Platformers</a></li>
+                <li><a href="RPG's.htm">RPG's</a></li>
+                <li><a href="Horror games.htm">Horror Games</a></li>
+                <li><a href="Consoles.htm">Consoles</a></li>
+                <li><a href="soundtrack.htm">Soundtrack</a></li>
+                <li><a href="Suggestions.htm"class="lastitem">Suggestions</a></li>
+            </ul> 
+        </nav>
+    <meta charset="UTF-8">
+    <title>Survey Submitted</title>
+</head>
+<body>
+
+<h1>Thank You!</h1>
+
+<p>Your survey has been submitted successfully.</p>
+
+<h2>Data Received:</h2>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+
+    document.write("<ul>");
+    for (const [key, value] of params) {
+        document.write("<li><strong>" + key + ":</strong> " + value + "</li>");
+    }
+    document.write("</ul>");
+</script>
+
+</body>
+</html>

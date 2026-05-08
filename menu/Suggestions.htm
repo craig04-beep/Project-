@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- @author Steven Craig, Craig Resume, Portfolio Page
+Southern Illinois University  Developed: Tested: 2-21-26,  Tested: 2-21-26
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf8"->
+        <title>Forms</title>
+        <link rel="icon" type="image/png" href="images/Falcon.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="style/slicknav.css">
+    
+      <!-- jQuery + SlickNav -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+
+</head>
+    
+<body>
+    
+    <header>
+        <img src="/images/play.png"
+             id="mainGraphic"
+             alt="Main Graphic"
+             class="rounded">
+    </header>
+            
+            
+    <script>
+                    
+        const mainGraphic = document.getElementById("mainGraphic");
+    
+        mainGraphic.addEventListener("mouseover", function() {
+            mainGraphic.src = "/images/player.png";
+    });
+    
+    mainGraphic.addEventListener("mouseout", function() {
+    mainGraphic.src = "/images/play.png";
+    });
+    </script>
+     <audio controls autoplay loop hidden>
+        <source src="/audio/Suggest.mp3" type="audio/mpeg">
+    </audio>        
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+
+
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="main menu.htm" class="current">Home</a></li>
+                <li><a href="3d platformers.htm">3d Platformers</a></li>
+                <li><a href="RPG's.htm">RPG's</a></li>
+                <li><a href="Horror games.htm">Horror Games</a></li>
+                <li><a href="Consoles.htm">Consoles</a></li>
+                <li><a href="soundtrack.htm">Soundtrack</a></li>
+                <li><a href="Suggestions.htm"class="lastitem">Suggestions</a></li>
+            </ul> 
+        </nav>
+
+
+	<meta charset="utf-8">
+    <title>Complete a Form</title>
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    	}
+		body {
+			font: 87.5% Arial, Helvetica, sans-serif;
+			width: 670px;
+		    margin: 20px auto;
+		    padding: 20px;
+		    border: 2px solid blue;
+		}
+		h1 {
+			color: rgb(0, 0, 0); 
+			font-size: 140%;
+		}
+		h2 {
+			font-size: 115%;
+			padding: .5em 0;
+		}
+		label {
+			color: blue;
+			float: left;
+			width: 8em;
+			font-weight: bold;
+			text-align: left;
+		}
+		input {
+			width: 15em;
+			margin: 0 0 .5em 1em;
+		}
+		#button, #reset {
+			width: 7em;
+			background-color: silver;
+			box-shadow: 2px 2px 0 blue; }
+		#button {
+			margin-left: 9em;
+		}
+	</style>
+</head>
+
+<body>
+<h1>This survey is to help us improve our site by having more game catgories 
+    Please complete our survey</h1>
+<form name="myform" action="survey_data.htm" method="get">
+	
+	<h2>Personal Information</h2>
+	<label for="email">Email address:</label>
+    <input type="email" name="email" id="email" autofocus required><br>
+    <label for="firstname">First name:</label>
+    <input type="text" name="firstname" id="firstname" required><br>
+    <label for="lastname">Last name:</label>
+    <input type="text" name="lastname" id="lastname" required><br>
+
+    <h2>Address Information</h2>
+
+    <label for="address">Address:</label>
+    <input type="text" name="address" id="address" required><br>
+    
+    <label for="city">City:</label>
+    <input type="text" name="city" id="city" required><br>
+    
+    <label for="state">State:</label>
+    <select name="state" id="state" required>
+        <option value="">Select a state</option>
+        <option value="IL">Illinois</option>
+        <option value="IN">Indiana</option>
+        <option value="IA">Iowa</option>
+        <option value="ID">Idaho</option>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+        <option value="CA">California</option>
+        <option value="CO">Colorado</option>
+        <option value="CT">Connecticut</option>
+        <option value="DE">Delaware</option>
+        <option value="FL">Florida</option>
+        <option value="GA">Georgia</option>
+        <option value="HI">Hawaii</option>
+        <!-- Add remaining states if required -->
+    </select><br>
+    
+    <label for="zip">ZIP:</label>
+    <input type="text" name="zip" id="zip" required 
+    pattern="\d{5}" title="Five digit ZIP code"><br>
+    
+    <label for="phone">Phone:</label>
+    <input type="tel" name="phone" id="phone" required 
+    placeholder="123-456-7890"
+    pattern="\d{3}-\d{3}-\d{4}" 
+    title="Format: 123-456-7890"><br>
+    
+    <label for="date">Creation Date:</label>
+    <input type="date" name="date" id="date" required><br>
+    
+    <label for="message">Message:</label>
+    <input type="text" name="message" id="message" 
+    minlength="50" maxlength="200"
+    title="Message must be between 50 and 200 characters"><br>
+
+<h2>Game Category Suggestion</h2>
+<label for="message">Suggestion:</label>
+<input type="text" name="message" id="message" required
+minlength="50" maxlength="200"
+title="Message must be between 50 and 200 characters"><br>
+
+
+
+<h2>How did you hear about us</h2>
+<input type="checkbox" name="web" id="web" value="web">
+<label for="web">Web search:</label><br>
+<input type="checkbox" name="facebook" id="facebook" value="facebook">
+<label for="facebook">Facebook:</label><br>
+<input type="checkbox" name= "twitter" id="twitter" value="twitter">
+<label for="twitter">Twitter:</label><br>
+<input type="checkbox" name= "message" id="message" value="message">
+<label for="message">Email message:</label><br>
+
+
+<h2>Thank you for taking our survey!</h2>
+    <input type="submit" name="button" id="button" value="Submit">
+    <input type="reset" name="reset" id="reset"> 
+
+</form>
+</body>
+</html>

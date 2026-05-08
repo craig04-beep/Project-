@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- @author Steven Craig, Craig Resume, Portfolio Page
+Southern Illinois University  Developed: Tested: 2-21-26,  Tested: 2-21-26
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Personal Portfolio</title>
+        <link rel="icon" type="image/png" href="images/Falcon.png">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="/style/main.css">
+  <link rel="stylesheet" href="style/slicknav.css">
+  <link rel="stylesheet" href="/menu/Artstyle and Aesthetic.htm">
+
+  <!-- jQuery + SlickNav -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.slicknav.min.js"></script>
+
+  <meta name="description" content="Resume">
+  <meta name="keywords" content="Portfolio, resume, Steven Craig, occupational">
+</head>
+
+<body>
+
+    <header>
+        <img src="/images/play.png"
+             id="mainGraphic"
+             alt="Main Graphic"
+             class="rounded">
+    </header>
+            
+            
+    <script>
+                    
+        const mainGraphic = document.getElementById("mainGraphic");
+    
+        mainGraphic.addEventListener("mouseover", function() {
+            mainGraphic.src = "/images/player.png";
+    });
+    
+    mainGraphic.addEventListener("mouseout", function() {
+    mainGraphic.src = "/images/play.png";
+    });
+    </script>
+    
+        <audio controls autoplay loop hidden>
+            <source src="/audio/main sound.mp3" type="audio/mpeg">
+        </audio>        
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="main menu.htm" class="current">Home</a></li>
+                <li><a href="3d platformers.htm">3d Platformers</a></li>
+                <li><a href="RPG's.htm">RPG's</a></li>
+                <li><a href="Horror games.htm">Horror Games</a></li>
+                <li><a href="Consoles.htm">Consoles</a></li>
+                <li><a href="soundtrack.htm">Soundtrack</a></li>
+                <li><a href="Suggestions.htm"class="lastitem">Suggestions</a></li>
+            </ul> 
+        </nav>
+        <h1>Steven Craig</h1>
+        <h2>Gaming website</h2>
+        <p>This site is about games and how I and others feel about certain types of games  </p>
+        <blockquote>This website will concist of information about the category  my top 10 and the top ten of this category online</blockquote>
+        <ol>
+            <li>Information</li>
+            <li>Internet's top 10</li>
+            <li>My top 10</li>
+        </ol>
+        <a href="https://www.siu.edu">WWW.SIU.EDU</a>
+        <p>How to contact Steven Craig &amp; Staff:</p> <address>1-700-aaa-xxxx<br>
+        <a href="mailto:owner@craig04-beep.github.io">owner@craig04-beep.github.io</a>>
+        <pre>
+My Address:
+Steven Craig
+370 Neely Drive
+Carbondale IL
+62901 
+        </pre>
+    </body>
+    <script src="js/main.js"></script>
+</body>
+</html>
